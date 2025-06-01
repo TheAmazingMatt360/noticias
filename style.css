@@ -24,19 +24,66 @@ body
     font-family: 'Inter', sans-serif;
 }
 
+body.menu-open::before
+{
+    content: "";
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 26, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 .header-mobile
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+}
+.header-mobile nav
+{
+    position: fixed;
+    background-color: var(-almost-white);
+    right: 3;
+    top: 0;
+    height: 100vh;
+    width: 16rem;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+
+    gap: 1.5rem;
+
+    display: none;
 
 }
+
+.header-mobile nav button
+{
+    align-self: flex-end;
+    margin-bottom: 4rem;
+}
+
+.header-mobile nav a
+{
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: var(-dark-space-blue);
+    text-decoration: none;
+}
+
 .header-mobile button
 {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    width: fit-content;
 }
 
 .primeira-secao
@@ -151,7 +198,3 @@ body
     line-height: 1.625rem;
 }
 
-@media 
-{
-    
-}
