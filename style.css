@@ -1,0 +1,28 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    -almost-white: hsl(36, 100%, 99%);
+    -silver: hsl(233, 8%, 79%);
+    -gunmetal: hsl(236, 13%, 42%);
+    -dark-space-blue: hsl(240, 100%, 5%);
+    -yellow: hsl(35, 77%, 62%);
+    -vermillion: hsl(5, 85%, 63%);
+}
+
+body
+{
+    padding: 1.75rem 1rem;
+    background-color: var(-almost-white);
+    font-family: 'Inter', sans-serif;
+}
+
+.header-mobile
+{
+    
+}
