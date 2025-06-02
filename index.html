@@ -14,12 +14,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body >
-    <header class="header-mobile">
+    <header>
         <img src="./assets/images/logo.svg" alt="Logo do site">
 
-        <button><img src="./assets/images/icon-menu.svg" alt="icone do menu hamburger"></button>
+        <button>
+            <img src="./assets/images/icon-menu.svg" alt="icone do menu hamburger">
+        </button>
 
-        <nav>
+        <nav class="mobile">
             <button><img src="./assets/images/icon-menu-close.svg" alt=""></button>
             <a href="#">Home</a>
             <a href="#">Novo</a>
@@ -27,10 +29,24 @@
             <a href="#">Trending</a>
             <a href="#">Categorias</a>
         </nav>
+
+        <nav class="desktop">
+            <a href="#">Home</a>
+            <a href="#">Novo</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categorias</a>
+        </nav>
+
     </header>
 
+    
     <main>
-        <section class="primeira-secao">
+        <section class="primeira-secao">  
+            <picture>
+                <source media="(min-width: 700px)" srcset="./assets/images/image-web-3-desktop.jpg">
+                <img src="./assets/images/image-web-3-desktop.jpg" alt="">
+            </picture>
             <img src="./assets/images/image-web-3-mobile.jpg" alt="icone de puzzle">
 
             <h1>
